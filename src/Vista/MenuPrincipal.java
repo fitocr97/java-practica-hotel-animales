@@ -36,6 +36,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnRegistrar.setText("Registrar");
+        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistrarActionPerformed(evt);
+            }
+        });
 
         btnSacar.setText("Sacar");
 
@@ -98,6 +103,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
+        RegistrarAnimal registrar = new RegistrarAnimal(this, true);
+        registrar.setLocationRelativeTo(null);
+        registrar.setVisible(true);
+        
+    }//GEN-LAST:event_btnRegistrarActionPerformed
 
    
 
