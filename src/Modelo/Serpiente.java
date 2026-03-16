@@ -3,10 +3,7 @@ package Modelo;
 
 import java.time.LocalDateTime;
 
-/**
- *
- * @author Rodolfo
- */
+
 public class Serpiente extends Animal{
     double longitud;
 
